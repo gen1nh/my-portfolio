@@ -12,18 +12,33 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="src/css/style.css" />
-
 </head>
 
 <body class="bg-gradient-to-t from-zinc-800 to-stone-950 text-white">
   <div class="main-wrapper max-w-[1280px] px-[14px] mt-[32px] m-auto">
-    <div class="flex flex-row-reverse mb-24" id="menu-hamburguer">
-      <img src="src/assets/link.svg" alt="menu-hamburguer" />
-    </div>
+
+<div class="flex flex-row justify-end">
+  <img 
+    id="menu-toggle-icon"
+    class="w-[56px] cursor-pointer"
+    src="src/assets/link.svg"
+    alt="menu-hamburguer"
+  />
+</div>
+
+<div id="menu-sair" class="hidden">
+  <div class="self-center">
+    <ul class="flex flex-col gap-6 text-center">
+      <li>Home</li>
+      <li>Projects</li>
+      <li>About-me</li>
+    </ul>
+  </div>
+</div>
 
     <main>
       <div class="flex flex-col gap-6 mb-[64px]">
-        <h1 class="text-5xl font-semibold font-primary text-center">
+        <h1 class="text-5xl mt-[96px] font-semibold font-primary text-center">
           GENINHO
         </h1>
         <p class="uppercase text-center text-[16px] leading-6 tracking-[2.2px] font-secondary font-medium">
@@ -38,169 +53,163 @@
           architectures on the Amazon AWS platform.
         </p>
         <div class="flex flex-col self-center gap-[16px] min-w-[168px]">
-          <button class="rounded-full font-semibold bg-white text-stone-950 max-w-[168px] min-h-[52px]">
+          <button type="button" class="rounded-full font-semibold bg-white text-stone-950 max-w-[168px] min-h-[52px]">
             Projects
           </button>
-          <button class="rounded-full font-semibold border-2 text-white max-w-[168px] min-h-[52px]">
+          <button type="button" class="rounded-full font-semibold border-2 text-white max-w-[168px] min-h-[52px]">
             Download CV
           </button>
         </div>
 
         <div class="mt-[100px]">
-
-                  <div class="flex flex-col gap-[26px]">
-          <h2 class="font-secondary text-neutral-600 tracking-[2.2px] text-[18px] font-medium text-center">
-            SKILLS
-          </h2>
-          <!-- Swiper 01 -->
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="src/assets/JavaScript.svg" alt="JavaScript Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/html.svg" alt="HTML5 Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/css.svg" alt="CSS3 Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/tailwind.svg" alt="Tailwind CSS Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/Sass.svg" alt="Sass Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/Git.svg" alt="Git Logo">
-              </div>
-            </div>
-          </div>
-          <!-- Swiper 02 -->
-          <div class="swiper mySwiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="src/assets/React.svg" alt="JavaScript Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/react native.svg" alt="HTML5 Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/c++.svg" alt="CSS3 Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/python.svg" alt="Tailwind CSS Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/java.svg" alt="Sass Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/Php.svg" alt="Git Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/NodeJs.svg" alt="Git Logo">
+          <div class="flex flex-col gap-[26px]">
+            <h2 class="font-secondary text-neutral-600 tracking-[2.2px] text-[18px] font-medium text-center">
+              SKILLS
+            </h2>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="src/assets/JavaScript.svg" alt="JavaScript Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/html.svg" alt="HTML5 Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/css.svg" alt="CSS3 Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/tailwind.svg" alt="Tailwind CSS Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/Sass.svg" alt="Sass Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/Git.svg" alt="Git Logo" />
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Swiper 03 -->
-          <div class="swiper mySwiper3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="src/assets/Figma.svg" alt="JavaScript Logo">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="src/assets/React.svg" alt="JavaScript Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/react native.svg" alt="HTML5 Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/c++.svg" alt="CSS3 Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/python.svg" alt="Tailwind CSS Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/java.svg" alt="Sass Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/Php.svg" alt="Git Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/NodeJs.svg" alt="Git Logo" />
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="src/assets/photshop.svg" alt="HTML5 Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/aftereffetcs.svg" alt="CSS3 Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/ilustrator.svg" alt="Tailwind CSS Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/Blender.svg" alt="Sass Logo">
-              </div>
-              <div class="swiper-slide">
-                <img src="src/assets/cinema$D.svg" alt="Git Logo">
+            </div>
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="src/assets/Figma.svg" alt="JavaScript Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/photshop.svg" alt="HTML5 Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/aftereffetcs.svg" alt="CSS3 Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/ilustrator.svg" alt="Tailwind CSS Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/Blender.svg" alt="Sass Logo" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/assets/cinema$D.svg" alt="Git Logo" />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-          <section class="mt-[100px]">
-            <div class="flex flex-col gap-10">
-              <h2 class="text-4xl font-semibold text-center">My Expertise</h2>
+        <section class="mt-[100px]">
+          <div class="flex flex-col gap-10">
+            <h2 class="text-4xl font-semibold text-center">My Expertise</h2>
 
-              <!-- CARD-01 -->
-              <div class="border-2 border-gray-600">
-                <div class="relative">
-                  <div class="flex gap-6 py-[44px] px-[36px]">
-                    <img src="public/images/svg.svg" alt="" />
-                    <img class="absolute px-[61px] py-[20px]" src="public/images/gradient.svg" alt="" />
-                    <h3 class="font-semibold text-2xl absolute px-[61px]">
-                      UX | UI <br />
-                      Design
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="mb-[44px]">
-                  <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
-                  <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
-                    Wireframing, <br />
-                    Prototyping, UI/UX, <br />
-                    Design Systems, Figma, LottieFilles.
-                  </p>
-                  <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
+            <div class="border-2 border-gray-600">
+              <div class="relative">
+                <div class="flex gap-6 py-[44px] px-[36px]">
+                  <img src="public/images/svg.svg" alt="" />
+                  <img class="absolute px-[61px] py-[20px]" src="public/images/gradient.svg" alt="" />
+                  <h3 class="font-semibold text-2xl absolute px-[61px]">
+                    UX | UI <br />
+                    Design
+                  </h3>
                 </div>
               </div>
 
-              <!-- CARD-02 -->
-              <div class="border-2 border-gray-600">
-                <div class="relative">
-                  <div class="flex gap-6 py-[44px] px-[36px]">
-                    <img src="public/images/react.svg" alt="" />
-                    <img class="absolute px-[61px] py-[20px]" src="public/images/gradient-blue.svg" alt="" />
-                    <h3 class="font-semibold text-2xl absolute px-[61px]">
-                      Frontend Dev React, NextJS
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="mb-[44px]">
-                  <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
-                  <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
-                    Passionate about UI/UX. I'm just getting started with
-                    development using HTML, CSS, JS, React, and NextJS
-                    frameworks.
-                  </p>
-                  <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
-                </div>
-              </div>
-
-              <!-- CARD-03 -->
-              <div class="border-2 border-gray-600">
-                <div class="relative">
-                  <div class="flex gap-6 py-[44px] px-[36px]">
-                    <img src="public/images/react.svg" alt="" />
-                    <img class="absolute px-[61px] py-[20px]" src="public/images/gradient-oranger.svg" alt="" />
-                    <h3 class="font-semibold text-2xl absolute px-[61px]">
-                      React Native, Android, iOS
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="mb-[44px]">
-                  <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
-                  <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
-                    Skilled in developing hybrid mobile apps and cross-platform
-                    solutions using the React Native framework.
-                  </p>
-                  <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
-                </div>
+              <div class="mb-[44px]">
+                <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
+                <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
+                  Wireframing, <br />
+                  Prototyping, UI/UX, <br />
+                  Design Systems, Figma, LottieFilles.
+                </p>
+                <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
               </div>
             </div>
-          </section>
-        </div>
+
+            <div class="border-2 border-gray-600">
+              <div class="relative">
+                <div class="flex gap-6 py-[44px] px-[36px]">
+                  <img src="public/images/react.svg" alt="" />
+                  <img class="absolute px-[61px] py-[20px]" src="public/images/gradient-blue.svg" alt="" />
+                  <h3 class="font-semibold text-2xl absolute px-[61px]">
+                    Frontend Dev React, NextJS
+                  </h3>
+                </div>
+              </div>
+
+              <div class="mb-[44px]">
+                <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
+                <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
+                  Passionate about UI/UX. I'm just getting started with
+                  development using HTML, CSS, JS, React, and NextJS
+                  frameworks.
+                </p>
+                <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
+              </div>
+            </div>
+
+            <div class="border-2 border-gray-600">
+              <div class="relative">
+                <div class="flex gap-6 py-[44px] px-[36px]">
+                  <img src="public/images/react.svg" alt="" />
+                  <img class="absolute px-[61px] py-[20px]" src="public/images/gradient-oranger.svg" alt="" />
+                  <h3 class="font-semibold text-2xl absolute px-[61px]">
+                    React Native, Android, iOS
+                  </h3>
+                </div>
+              </div>
+
+              <div class="mb-[44px]">
+                <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
+                <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
+                  Skilled in developing hybrid mobile apps and cross-platform
+                  solutions using the React Native framework.
+                </p>
+                <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="flex flex-col gap-4 mt-[128px] text-center mb-[32px]">
@@ -217,7 +226,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="src/js/script.js"></script>
-
 </body>
 
 </html>
