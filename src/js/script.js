@@ -1,42 +1,29 @@
-const checkbox = document.getElementById('chk');
-const ball = document.querySelector('.ball');
-const profileImg = document.getElementById('profile-img'); // pega a foto principal
-
-checkbox.addEventListener('change', () => {
-  ball.style.transform = checkbox.checked ? 'translateX(32px)' : 'translateX(0)';
-  document.body.classList.toggle('dark-mode', checkbox.checked);
-
-  // troca a foto no modo dark/light
-  if (checkbox.checked) {
-    profileImg.src = "assets/profile-dark.png"; // imagem para dark mode
-  } else {
-    profileImg.src = "assets/profile-light1.png"; // imagem para light mode
-  }
-});
-// Adiciona/remover a classe .hovered ao tocar/clicar no mobile
-function enableTouchHover(selector, hoverClass = "hovered") {
-  document.querySelectorAll(selector).forEach(el => {
-    el.addEventListener("touchstart", function(e) {
-      // Remove hover de outros elementos iguais (opcional)
-      document.querySelectorAll(selector).forEach(other => {
-        if (other !== el) other.classList.remove(hoverClass);
-      });
-      el.classList.add(hoverClass);
-    });
-    // Remove o hover ao tocar fora (opcional)
-    el.addEventListener("touchend", function(e) {
-      setTimeout(() => {
-        el.classList.remove(hoverClass);
-      }, 400); // tempo para ver o efeito
-    });
-  });
-}
-
-// Exemplo de uso para elementos que devem ter hover no mobile
-document.addEventListener("DOMContentLoaded", function() {
-  enableTouchHover(".hover-design");
-  enableTouchHover(".hover-code");
-  enableTouchHover(".hover-create");
-  enableTouchHover(".hover-learn");
-  // Adicione outros seletores que usam hover se necessário
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  // Defina um valor base para telas menores
+  slidesPerView: 2.6, 
+  spaceBetween: 12,
+  
+  breakpoints: {
+    // A partir de 390px
+    390: {
+      slidesPerView: 2.6, // Mantém o que você já tinha
+      spaceBetween: 12,
+    },
+    // A partir de 640px
+    640: {
+      slidesPerView: 4, // Exemplo: 4 slides visíveis
+      spaceBetween: 20,
+    },
+    // A partir de 768px
+    768: {
+      slidesPerView: 5, // Exemplo: 5 slides visíveis
+      spaceBetween: 40,
+    },
+    // A partir de 1024px
+    1024: {
+      slidesPerView: 6, // Exemplo: 6 slides visíveis
+      spaceBetween: 50,
+    },
+  },
 });
