@@ -1,29 +1,38 @@
-var swiper = new Swiper(".mySwiper", {
+// Coloque isso no seu arquivo src/js/script.js
+
+// Carrossel 1 - Rolando para a esquerda
+const swiper1 = new Swiper(".mySwiper1", {
   loop: true,
-  // Defina um valor base para telas menores
-  slidesPerView: 2.6, 
-  spaceBetween: 12,
-  
-  breakpoints: {
-    // A partir de 390px
-    390: {
-      slidesPerView: 2.6, // Mantém o que você já tinha
-      spaceBetween: 12,
-    },
-    // A partir de 640px
-    640: {
-      slidesPerView: 4, // Exemplo: 4 slides visíveis
-      spaceBetween: 20,
-    },
-    // A partir de 768px
-    768: {
-      slidesPerView: 5, // Exemplo: 5 slides visíveis
-      spaceBetween: 40,
-    },
-    // A partir de 1024px
-    1024: {
-      slidesPerView: 6, // Exemplo: 6 slides visíveis
-      spaceBetween: 50,
-    },
+  slidesPerView: 2.4,
+  speed: 5000, // Aumente para mais lento, diminua para mais rápido
+  autoplay: {
+    delay: 0, // Delay ZERO para não parar
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+});
+
+// Carrossel 2 - Rolando para a direita (invertido)
+const swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  slidesPerView: 2.4,
+  speed: 5000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+    reverseDirection: true, // Inverte o lado
+  },
+});
+
+// Carrossel 3 - Rolando para a esquerda
+const swiper3 = new Swiper(".mySwiper3", {
+  loop: true,
+  slidesPerView: 2.4,
+  speed: 5000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
 });
