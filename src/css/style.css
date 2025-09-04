@@ -35,8 +35,6 @@
 
 .swiper {
   width: 100%;
-  max-width: 390px;
-  height: 32px;
   
   /* Adicione estas duas linhas para centralizar o Swiper */
   margin-left: auto;
