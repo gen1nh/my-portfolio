@@ -23,11 +23,13 @@
 
     <div id="menu-sair" class="hidden md:block md:py-[24px]">
       <div class="self-center">
-        <ul class="flex flex-col md:flex-row md:justify-end gap-6 text-center">
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About-me</li>
+        <ul class="flex flex-col md:flex-row md:justify-end text-center">
+          <li class="btn-links">Home</li>
+          <li class="btn-links">Projects</li>
+          <li class="btn-links mr-4">About-me</li>
+          <img src="src/assets/dark.svg" alt="">
         </ul>
+
       </div>
     </div>
 
@@ -43,19 +45,20 @@
           & App Developer.
         </p>
 
-        <p class="flex self-center text-center font-light leading-[24px] text-[16px] md:text-[18px] max-w-[680px] w-[100%]  text-stone-400">
-          I am a seasoned full-stack software
-          engineer with over 8 years of professional 
-          experience, specializing in backend development. <br>
-          My expertise lies in crafting robust and scalable SaaS-based
-          architectures on the Amazon AWS platform.
+        <p
+          class="flex self-center text-center font-light leading-[24px] text-[16px] md:text-[18px] max-w-[840px] w-[100%]  text-stone-400">
+          I'm a dedicated UI/UX Designer and aspiring Front-End Developer.
+          <br>I specialize in creating clean, user-centric interfaces, transforming ideas into functional digital
+          experiences.
+          I'm expanding my skills in HTML, CSS, JavaScript, React, and React Native, aiming to combine design and
+          development into integrated solutions for web and mobile platforms.
         </p>
 
-        <div class="flex flex-col lg:flex-row self-center gap-[16px]">
-          <button type="button" class="rounded-full font-semibold bg-white text-stone-950 w-[168px] h-[54px]">
+        <div class="flex flex-col md:flex-row self-center gap-[16px]">
+          <button type="button" class=" btn-primary bg-white text-stone-950 ">
             Projects
           </button>
-          <button type="button" class="rounded-full font-semibold border-2 text-white w-[168px] h-[54px]">
+          <button type="button" class=" btn-primary text-white">
             Download CV
           </button>
         </div>
@@ -138,9 +141,8 @@
         </div>
 
         <section class="mt-[100px]">
-          <div class="flex flex-col gap-10">
-            <h2 class="text-4xl font-semibold text-center">My Expertise</h2>
-
+          <h2 class="text-4xl font-semibold text-center mb-[32px]">My Expertise</h2>
+          <div class="flex flex-col gap-10 xl:flex-row">
             <div class="border-2 border-gray-600">
               <div class="relative">
                 <div class="flex gap-6 py-[44px] px-[36px]">
@@ -156,8 +158,7 @@
               <div class="mb-[44px]">
                 <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
                 <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
-                  Wireframing, <br />
-                  Prototyping, UI/UX, <br />
+                  Wireframing,Prototyping, UI/UX,
                   Design Systems, Figma, LottieFilles.
                 </p>
                 <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
@@ -225,6 +226,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="src/js/script.js"></script>
+  <script src="src/js/menu.js"></script>
 </body>
 
 </html>

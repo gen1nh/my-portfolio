@@ -54,3 +54,34 @@
   height: auto;
   width: auto;
 }
+
+.btn-links{
+  border-radius: 999px;
+  padding: 6px 24px;
+  transition: ease-in;
+}
+
+.btn-links:hover{
+  border-radius: 999px;
+  padding: 6px 24px;
+  background-color: #E6BAFF;
+  color: #000000CC;
+  transition: ease-in;
+  cursor: pointer;
+}
+
+.btn-primary{
+  border-radius: 999px;
+  width: 168px;
+  height: 54px;
+  border: 2px solid;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-primary:hover{
+  background-color: rgba(128, 128, 128, 0.192);
+  border-color: white;
+  transition: ease-out;
+  color: white;
+}
