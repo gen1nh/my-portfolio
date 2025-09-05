@@ -85,3 +85,22 @@
   transition: ease-out;
   color: white;
 }
+
+.btn-links-projects {
+  align-self: center;
+  text-align: center;
+  padding: 6px 24px;
+  border-radius: 6px;
+  color: #E8E8E8;
+  transition: ease-out;
+  transition-duration: 300ms;
+  transform: scale(0px);
+}
+
+.btn-links-projects:hover {
+  font-weight: 600;
+  background-color: #343A40;
+  color: white;
+  transition: ease-in;
+  transition-duration: 200ms;
+}

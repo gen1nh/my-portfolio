@@ -1,5 +1,3 @@
-// Coloque isso no seu arquivo src/js/script.js
-
 // Carrossel 1 - Rolando para a esquerda
 const swiper1 = new Swiper(".mySwiper1", {
   loop: true,
