@@ -2,89 +2,91 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Geninho</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="src/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Geninho</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
 </head>
 
 <body class="bg-gradient-to-t from-zinc-800 to-stone-950 text-white">
-  <div class="main-wrapper max-w-[1280px] px-[14px] mt-[32px] m-auto">
+    <div class="main-wrapper max-w-[1200px] px-[14px] mt-[32px] m-auto">
 
-    <div class="flex flex-row justify-end md:hidden">
-      <img id="menu-toggle-icon" class="w-[56px] cursor-pointer" src="src/assets/link.svg" alt="menu-hamburguer" />
-    </div>
+        <div class="flex flex-row justify-end md:hidden">
+            <img id="menu-toggle-icon" class="w-[56px] cursor-pointer" src="src/assets/link.svg"
+                alt="menu-hamburguer" />
+        </div>
 
-    <div id="menu-sair" class="hidden md:block md:py-[24px]">
-      <div class="self-center">
-        <ul class="flex flex-col items-center gap-2 md:flex-row md:justify-end text-center">
-            <li class="btn-links"><a href="index.html">Home</a></li>
-            <li class="btn-links"><a href="projects.html">Projects</a></li>
-            <li class="btn-links"><a href="about-me.html">About-me</a></li>
-          <img class="w-[24px]" src="src/assets/dark.svg" alt="">
-        </ul>
-
-      </div>
-    </div>
-
-    <main>
-        <section class="flex flex-col justify-between">
-            <div class="flex flex-col gap-[32px]">
-                <h1 class="font-semibold text-5xl mb-12 mt-[132px] ml-[64px]">
-                    Projects
-                </h1>
-                <nav class="mb-8 flex flex-col">
-                    <ul class="overflow-x-auto w-[100%] max-w-[1200px] justify-around md:justify-center flex flex-row ">
-                        <li class="btn-links-projects">All</li>
-                        <li class="btn-links-projects">Projects</li>
-                        <li class="btn-links-projects">UI/UX</li>
-                        <li class="btn-links-projects">Front-end</li>
-                        <li class="btn-links-projects">Mobile (React Native)</li>
-                        <li class="btn-links-projects">Ilustrations</li>
-                    </ul>
-                </nav>
-
-                            <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,448px))] gap-6 justify-center">
-                <div class="bg-purple-100 max-w-[448px] rounded-xl">
-                    <img src="public/images/gradient1.png" alt="">
-                </div>
-                                <div class="bg-purple-100 max-w-[448px] rounded-xl">
-                    <img src="public/images/gradient1.png" alt="">
-                </div>
-                                <div class="bg-purple-100 max-w-[448px] rounded-xl">
-                    <img src="public/images/gradient1.png" alt="">
-                </div>
-                                <div class="bg-purple-100 max-w-[448px] rounded-xl">
-                    <img src="public/images/gradient1.png" alt="">
-                </div>
+        <div id="menu-sair" class="hidden md:block md:py-[24px]">
+            <div class="self-center">
+                <ul class="flex flex-col items-center gap-2 md:flex-row md:justify-end text-center">
+                    <li class="btn-links"><a href="index.html">Home</a></li>
+                    <li class="btn-links"><a href="projects.html">Projects</a></li>
+                    <li class="btn-links"><a href="about-me.html">About-me</a></li>
+                    <img class="w-[24px]" src="src/assets/dark.svg" alt="">
+                </ul>
 
             </div>
+        </div>
+
+        <main>
+            <section>
+                <div class="flex flex-col gap-[32px]">
+                    <h1 class="font-semibold text-3xl md:text-4xl mb-2 md:mb-6 mt-[132px] lg:text-5xl">
+                        Projects
+                    </h1>
+                    <nav class="mb-2 flex flex-col">
+                        <ul
+                            class="overflow-x-auto whitespace-nowrap w-full justify-around md:justify-center flex flex-row ">
+                            <li class="btn-links-projects">All</li>
+                            <li class="btn-links-projects">Projects</li>
+                            <li class="btn-links-projects">UI/UX</li>
+                            <li class="btn-links-projects">Front-end</li>
+                            <li class="btn-links-projects">Mobile (React Native)</li>
+                            <li class="btn-links-projects">Ilustrations</li>
+                        </ul>
+                    </nav>
+
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,574px))] gap-6 justify-center">
+                        <div class="bg-purple-100 w-full rounded-xl">
+                            <img src="public/images/gradient1.png" class="w-full" alt="">
+                        </div>
+                        <div class="bg-purple-100 w-full rounded-xl">
+                            <img src="public/images/gradient1.png" class="w-full" alt="">
+                        </div>
+                        <div class="bg-purple-100 w-full rounded-xl">
+                            <img src="public/images/gradient1.png" class="w-full" alt="">
+                        </div>
+                        <div class="bg-purple-100 w-full rounded-xl">
+                            <img src="public/images/gradient1.png" class="w-full" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+
+        <footer class="flex flex-col gap-4 mt-[128px] text-center mb-[32px]">
+            <div class="flex flex-row gap-4 justify-center">
+                <img src="my-portfolio-tw-v2/src/assets/Item → Link → Ícone do GitHub 1.svg" alt="" />
+                <img src="my-portfolio-tw-v2/src/assets/Item → Link → Ícone do Instagram 1.svg" alt="" />
+                <img src="my-portfolio-tw-v2/src/assets/Item → Link → Ícone do LinkedIn 1.svg" alt="" />
             </div>
+            <div>
+                <p class="uppercase font-secondary">Copyright © 2025 gen1nh</p>
+            </div>
+        </footer>
+    </div>
 
-
-        </section>
-    </main>
-
-    <footer class="flex flex-col gap-4 mt-[128px] text-center mb-[32px]">
-      <div class="flex flex-row gap-4 justify-center">
-        <img src="my-portfolio-tw-v2/src/assets/Item → Link → Ícone do GitHub 1.svg" alt="" />
-        <img src="my-portfolio-tw-v2/src/assets/Item → Link → Ícone do Instagram 1.svg" alt="" />
-        <img src="my-portfolio-tw-v2/src/assets/Item → Link → Ícone do LinkedIn 1.svg" alt="" />
-      </div>
-      <div>
-        <p class="uppercase font-secondary">Copyright © 2025 gen1nh</p>
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="src/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/menu.js"></script>
 </body>
 
 </html>
