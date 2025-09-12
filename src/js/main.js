@@ -88,3 +88,7 @@ const swiper3 = new Swiper(".mySwiper3", {
     },
   }
 });
+
+import { Footer } from "/src/components/footer.js";
+
+document.querySelector(".main-wrapper").insertAdjacentHTML("afterend", Footer());
