@@ -2,7 +2,7 @@ import { Footer } from "/src/components/footer.js";
 
 document.querySelector(".main-wrapper").insertAdjacentHTML("beforeend", Footer());
 
-const swiper1 = new Swiper(".mySwiper1", {
+const swiper = new Swiper(".mySwiper1", {
   loop: true,
   slidesPerView: 5,
   speed: 5000,
@@ -18,7 +18,7 @@ const swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   slidesPerView: 5,
   speed: 5000,
-  autoplay: { delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true },
+  autoplay: { delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true, reverseDirection: true },
   breakpoints: {
     768: { slidesPerView: 5, speed: 3000 },
     640: { slidesPerView: 4, speed: 3000 },
