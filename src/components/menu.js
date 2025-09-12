@@ -4,15 +4,13 @@ const menuSair = document.getElementById('menu-sair');
 let isOpen = false;
 
 menuToggleIcon.addEventListener('click', () => {
-
   menuSair.classList.toggle('hidden');
-
 
   isOpen = !isOpen;
 
   if (isOpen) {
-    menuToggleIcon.src = "src/assets/close.svg"; // X
+    menuToggleIcon.src = "/src/assets/close.svg"; // X
   } else {
-    menuToggleIcon.src = "src/assets/link.svg"; // hambúrguer
+    menuToggleIcon.src = "/src/assets/link.svg"; // hambúrguer
   }
 });
