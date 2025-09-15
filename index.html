@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Geninho</title>
-   <link rel="icon" type="icon" href="src/assets/favicon/favicon.ico">
+  <link rel="icon" type="icon" href="src/assets/favicon/favicon.ico" />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet" />
@@ -13,11 +13,23 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="src/css/style.css" />
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
 </head>
 
 <body class="bg-gradient-to-t from-zinc-800 to-stone-950 text-white">
-  <div class="main-wrapper max-w-[1000px] px-[14px] mt-[32px] m-auto">
 
+
+<!-- No <body> de qualquer página -->
+<loading-screen
+  src="src/assets/lottie/loading - chemistry.json"
+  width="180"
+  height="180"
+  speed="1">
+</loading-screen>
+
+
+  <div id="content"
+    class="hidden opacity-0 transition-opacity duration-700 main-wrapper max-w-[1000px] px-4 mt-8 m-auto">
     <div class="flex flex-row justify-end max-w-[1280px] md:hidden">
       <img id="menu-toggle-icon" class="w-[56px] cursor-pointer" src="src/assets/menu/link.svg" alt="menu-hamburguer" />
     </div>
@@ -28,9 +40,8 @@
           <li class="btn-links"><a href="index.html">Home</a></li>
           <li class="btn-links"><a href="projects.html">Projects</a></li>
           <li class="btn-links"><a href="about-me.html">About-me</a></li>
-          <img class="w-[24px]" src="src/assets/menu/dark.svg" alt="Dark mode icon">
+          <img class="w-[24px]" src="src/assets/menu/dark.svg" alt="Dark mode icon" />
         </ul>
-
       </div>
     </div>
 
@@ -42,28 +53,27 @@
         </h1>
         <p
           class="uppercase text-center text-[16px] leading-6 tracking-[2.2px] font-secondary font-medium lg:text-[22px]">
-          ux|ui design, Front end
-          & App Developer.
+          ux|ui design, Front end & App Developer.
         </p>
 
         <p
-          class="flex self-center text-center font-light leading-[24px] text-[16px] md:text-[18px] max-w-[840px] w-[100%]  text-stone-400">
+          class="flex self-center text-center font-light leading-[24px] text-[16px] md:text-[18px] max-w-[840px] w-[100%] text-stone-400">
           I'm a dedicated UI/UX Designer and aspiring Front-End Developer.
-          <br>I specialize in creating clean, user-centric interfaces, transforming ideas into functional digital
-          experiences.
-          I'm expanding my skills in HTML, CSS, JavaScript, React, and React Native, aiming to combine design and
-          development into integrated solutions for web and mobile platforms.
+          <br />I specialize in creating clean, user-centric interfaces,
+          transforming ideas into functional digital experiences. I'm
+          expanding my skills in HTML, CSS, JavaScript, React, and React
+          Native, aiming to combine design and development into integrated
+          solutions for web and mobile platforms.
         </p>
 
         <div class="flex flex-col md:flex-row self-center gap-[16px]">
-          <button type="button" class=" btn-primary bg-white text-stone-950 ">
+          <button type="button" class="btn-primary bg-white text-stone-950">
             Projects
           </button>
           <a href="src/assets/Geninho_CV.pdf" download="Geninho_CV.pdf"
             class="btn-primary text-white flex justify-center items-center">
             Download CV
           </a>
-
         </div>
 
         <div class="mt-[100px]">
@@ -144,7 +154,9 @@
         </div>
 
         <section class="mt-[100px]">
-          <h2 class="text-4xl font-semibold text-center mb-[32px]">My Expertise</h2>
+          <h2 class="text-4xl font-semibold text-center mb-[32px]">
+            My Expertise
+          </h2>
           <div class="flex flex-col justify-around gap-7 xl:flex-row">
             <div class="border-2 border-gray-600 xl:max-w-[330px]">
               <div class="relative">
@@ -162,8 +174,8 @@
               <div class="mb-[44px]">
                 <span class="block mx-[32px] mb-[4px] text-gray-600">&lt;h3&gt;</span>
                 <p class="border-l-2 border-gray-600 px-4 font-secondary font-normal text-[16px] mx-[49px]">
-                  Wireframing, <br>Prototyping, UI/UX,
-                  Design Systems, Figma, LottieFilles.
+                  Wireframing, <br />Prototyping, UI/UX, Design Systems,
+                  Figma, LottieFilles.
                 </p>
                 <span class="block mx-[32px] mt-[4px] text-gray-600">&lt;/h3&gt;</span>
               </div>
@@ -219,6 +231,8 @@
     </main>
   </div>
 
+  <script type="module" src="src/components/loading-screen.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="src/js/main.js" type="module" defer></script>
   <script src="src/components/menu.js"></script>

@@ -38,3 +38,17 @@ const swiper3 = new Swiper(".mySwiper3", {
   }
   
 });
+
+window.addEventListener("load", () => {
+  const loading = document.getElementById("loading");
+  const content = document.getElementById("content");
+
+  // inicia fade-out
+  loading.classList.add("fade-out");
+
+  // depois de 700ms, remove da tela
+  setTimeout(() => {
+    loading.classList.add("hidden");
+    content.classList.remove("hidden");
+  }, 700);
+});
