@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    speed: 600, // controla a suavidade da transição
+    speed: 600,
     coverflowEffect: {
         rotate: 50,
         stretch: 1,
@@ -14,8 +14,18 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-// --- NAVEGAÇÃO CUSTOMIZADA ---
+// --- CORRIGE O COVERFLOW SE O CONTAINER ESTIVER ESCONDIDO ---
+const content = document.getElementById('content');
+if (content.classList.contains('hidden')) {
+    // espera o fade-in ou transição acabar
+    content.addEventListener('transitionend', () => {
+        swiper.update(); // recalcula o coverflow
+    });
+} else {
+    swiper.update(); // se já estiver visível
+}
 
+// --- NAVEGAÇÃO CUSTOMIZADA ---
 const navIcons = document.querySelectorAll('#custom-nav .nav-box');
 
 // Atualiza opacidade dos ícones
