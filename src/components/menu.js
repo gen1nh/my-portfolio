@@ -9,8 +9,8 @@ menuToggleIcon.addEventListener('click', () => {
   isOpen = !isOpen;
 
   if (isOpen) {
-    menuToggleIcon.src = "/src/assets/close.svg"; // X
+    menuToggleIcon.src = "/src/assets/close1.svg"; // X
   } else {
-    menuToggleIcon.src = "/src/assets/link.svg"; // hambúrguer
+    menuToggleIcon.src = "/src/assets/menu.svg"; // hambúrguer
   }
 });
