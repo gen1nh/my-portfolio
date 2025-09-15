@@ -7,7 +7,7 @@ export function Footer() {
         <a href="https://instagram.com/gen1nh" target="_blank">
             <img src="src/assets/footer/instagram.svg" alt="Instagram"/>
         </a>
-        <a href="https://linkedin.com/in/gen1nh" target="_blank"></a>
+        <a href="https://linkedin.com/in/gen1nh" target="_blank">
            <img src="src/assets/footer/linkedin.svg" alt="Linkedin"/>
         </a>
       </div>
