@@ -1,12 +1,31 @@
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/src/assets/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* já que é variável */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .font-primary {
@@ -14,7 +33,7 @@
 }
 
 .font-secondary {
-  font-family: "Roboto Mono", sans-serif; /* fonte secundária */
+  font-family: "Maven Pro", sans-serif; /* fonte secundária */
 }
 
 .icon-skills {
@@ -55,18 +74,9 @@
 }
 
 .btn-links {
-  border-radius: 999px;
   padding: 6px 24px;
   transition: ease-in;
-}
-
-.btn-links:hover {
-  border-radius: 999px;
-  padding: 6px 24px;
-  background-color: #e6baff;
-  color: #000000cc;
-  transition: ease-in;
-  cursor: pointer;
+  font-weight: 400;
 }
 
 .btn-primary {
@@ -74,7 +84,7 @@
   width: 168px;
   height: 54px;
   border: 2px solid;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -146,4 +156,11 @@
 background-color: rgb(12 10 9);
   z-index: 9999;
   transition: opacity 0.7s ease;
+}
+
+.div-lateral-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
