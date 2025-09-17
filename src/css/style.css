@@ -2,23 +2,26 @@
 
 @font-face {
   font-family: "Maven Pro";
-  src: url("/src/assets/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900; /* já que é variável */
+  src: url("/src/assets/fonts/Maven_Pro/MavenPro-Regular.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/src/assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  src: url("/src/assets/fonts/Poppins/Poppins-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/src/assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  src: url("/src/assets/fonts/Poppins/Poppins-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
