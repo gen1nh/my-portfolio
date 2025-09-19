@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024fc609-8033-4dad-a736-997687441ada" name="Changes" comment="remocao do componente footer" />
+    <list default="true" id="024fc609-8033-4dad-a736-997687441ada" name="Changes" comment="hotfix: remocao do componente footer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,12 +54,12 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/gen1nh/my-portfolio.git",
-    "accountId": "c9402567-2f83-4cd7-a06f-b4d341dc5f3f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gen1nh/my-portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;c9402567-2f83-4cd7-a06f-b4d341dc5f3f&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,7 +84,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "hotfix-footer-home",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -120,6 +120,7 @@
       <workItem from="1758226649144" duration="10000" />
       <workItem from="1758281398869" duration="72000" />
       <workItem from="1758281483027" duration="2635000" />
+      <workItem from="1758290950836" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="hotfix-footer-home">
       <option name="closed" value="true" />
@@ -137,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758289586333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hotfix: remocao do componente footer">
+      <option name="closed" value="true" />
+      <created>1758291108884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758291108884</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hotfix-footer-home" />
     <MESSAGE value="remocao do componente footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="remocao do componente footer" />
+    <MESSAGE value="hotfix: remocao do componente footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotfix: remocao do componente footer" />
   </component>
 </project>
