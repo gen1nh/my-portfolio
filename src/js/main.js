@@ -1,7 +1,3 @@
-import { Footer } from "/src/components/footer.js";
-
-document.querySelector(".main-wrapper").insertAdjacentHTML("beforeend", Footer());
-
 const swiper = new Swiper(".mySwiper1", {
   loop: true,
   slidesPerView: 5,
